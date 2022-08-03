@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Age Calculator</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <script src="myscript.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <br>
+            <img src="calculator.png">
+            <h1>Age<br>Calculator</h1>
+            <hr>
+            <br><br>
+            <div class="input-box">
+                <input type="number" id="date" placeholder="Date" required min="1" max="31">
+                <input type="number" id="month" placeholder="Month" required min="1" max="12">
+                <input type="number" id="year" placeholder="Year" min="1960" max="2040">
+            </div>
+            <br>
+            <div class="btn-box">
+                <button type="submit" onclick="age()">Calculate Age</button>
+                <button type="reset" onclick="reset()">Reset</button>
+            </div>
+            <hr>
+            <span id="demo"></span>
+        </div>
+    </body>
+
+</html>
